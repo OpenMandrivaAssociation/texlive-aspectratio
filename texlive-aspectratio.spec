@@ -103,3 +103,11 @@ aeronautical scientists and engineers.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex doc %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Tue Jan 31 2012 Paulo Andrade <pcpa@mandriva.com.br> 2.0-1
++ Revision: 770109
+- texlive-aspectratio
+- texlive-aspectratio
+
