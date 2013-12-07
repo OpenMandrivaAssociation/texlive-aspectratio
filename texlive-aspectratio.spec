@@ -6,7 +6,7 @@
 # catalog-version 2.0
 Name:		texlive-aspectratio
 Version:	2.0
-Release:	2
+Release:	3
 Summary:	Capital A and capital R ligature for Aspect Ratio
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/aspectratio
