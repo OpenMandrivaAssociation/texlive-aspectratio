@@ -1,18 +1,12 @@
-# revision 25243
-# category Package
-# catalog-ctan /macros/latex/contrib/aspectratio
-# catalog-date 2012-01-28 10:04:30 +0100
-# catalog-license lppl
-# catalog-version 2.0
 Name:		texlive-aspectratio
-Version:	2.0
-Release:	10
+Version:	25243
+Release:	1
 Summary:	Capital A and capital R ligature for Aspect Ratio
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/aspectratio
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/aspectratio.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/aspectratio.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/aspectratio.r25243.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/aspectratio.doc.r25243.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -24,12 +18,12 @@ Metafont source) for the 'AR' symbol (for Aspect Ratio) used by
 aeronautical scientists and engineers.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -96,18 +90,10 @@ aeronautical scientists and engineers.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Tue Jan 31 2012 Paulo Andrade <pcpa@mandriva.com.br> 2.0-1
-+ Revision: 770109
-- texlive-aspectratio
-- texlive-aspectratio
-
