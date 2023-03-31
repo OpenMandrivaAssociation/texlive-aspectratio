@@ -1,6 +1,6 @@
 Name:		texlive-aspectratio
 Version:	25243
-Release:	1
+Release:	2
 Summary:	Capital A and capital R ligature for Aspect Ratio
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/aspectratio
